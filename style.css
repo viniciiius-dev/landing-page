@@ -3,13 +3,11 @@ body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    display: flex;
-    flex-direction: column;
 }
 
 .header {
     background-color: #1F2937;
-    padding: 16px;
+    padding: 16px 0px;
     width: 100%;
 }
 .container {
@@ -35,9 +33,11 @@ body {
     text-decoration: none;
 }
 .hero-section {
-    padding: 64px 16px;
+    display: flex;
+    padding: 64px 0px;
     background-color: #1F2937;
     width: 100%;
+    flex: 1 1 auto;
 }
 .hero-container {
     display: flex;
@@ -55,10 +55,6 @@ body {
 .hero-text {
     color: #E5E7EB;
     font-size: 18px;
-}
-.hero-left {
-    width: 50%;
-    max-height: 250px;
 }
 .hero-div {
     max-height: 100%;
@@ -79,5 +75,45 @@ body {
     border: 1px;
     border-radius: 8px;
     font-weight: 900;
-
 }
+
+
+
+/* SEÇÃO DE DEPOIMENTOS */
+.depoimentos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+}
+.depoimentos-titulo {
+    font-weight: 900;
+    font-size: 36px;
+    color: #1F2937;
+}
+.depoimentos-div {
+    display: flex;
+    gap: 64px;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.depoimento-nome {
+    font-size: 24px;
+    font-weight: 700;
+}
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    flex-wrap: wrap;
+    flex: auto;
+    max-width: 200px;
+}
+.depoimento-img {
+    border-radius: 25px;
+    border: 2px solid #3882F6
+}
+
