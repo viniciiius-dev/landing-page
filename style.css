@@ -1,10 +1,12 @@
 body {
     box-sizing: border-box;
-    margin: 0;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
-
+* {
+    margin: 0;
+}
+/* header */
 .header {
     background-color: #1F2937;
     padding: 16px 0px;
@@ -32,6 +34,7 @@ body {
     color: #E5E7EB;
     text-decoration: none;
 }
+/* seção hero */
 .hero-section {
     display: flex;
     padding: 64px 0px;
@@ -47,6 +50,7 @@ body {
     justify-content: space-around;
     height: auto;
 }
+
 .hero-title {
     color: #F9FAF8;
     font-size: 48px;
@@ -55,9 +59,20 @@ body {
 .hero-text {
     color: #E5E7EB;
     font-size: 18px;
+    margin-top: 16px;
 }
 .hero-div {
     max-height: 100%;
+}
+.btn-hero {
+    margin-top: 16px;
+    text-align: center;
+    background-color: #3882F6;
+    color: #FFF;
+    padding: 8px;
+    border: 1px;
+    border-radius: 8px;
+    font-weight: 900;
 }
 .img-div {
     height: 250px;
@@ -67,14 +82,6 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-.button-cta {
-    background-color: #3882F6;
-    color: #FFF;
-    padding: 8px;
-    border: 1px;
-    border-radius: 8px;
-    font-weight: 900;
 }
 
 
@@ -86,7 +93,8 @@ body {
     align-items: center;
     justify-content: center;
     padding: 0px 16px;
-    margin-top: 16px;
+    margin-top: 32px;
+    gap: 64px;
 }
 .depoimentos-titulo {
     font-weight: 900;
@@ -111,18 +119,21 @@ body {
     text-align: justify;
     flex-wrap: wrap;
     max-width: 200px;
+    gap: 16px;  
 }
 .depoimento-img {
     border-radius: 25px;
     border: 2px solid #3882F6
 }
+
+/* SEÇÃO DE INSPIRAÇÃO */
 .inspiracao-section {
     width: 100%;
     background-color: #E5E7EB;
     display: flex;
     justify-content: center;
     padding: 64px 0px;
-    margin: 64px 0px;
+    margin: 64px auto;
 }
 .inspiracao-div {
     width: 50%;
@@ -143,4 +154,40 @@ body {
     font-size: 24px;
     margin: 0;
     align-self: flex-end;
+}
+
+/* Seção de CALL TO ACTION */
+.cta-container {
+    background-color: #3882F6;
+    border-radius: 8px;
+    display: flex;
+    margin: 64px auto;
+    width: 50%;
+    justify-content: space-between;
+    padding: 32px 128px;
+    align-items: center;
+}
+.cta-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.cta-titulo {
+    color: #fff;
+    font-weight: 900;
+    font-size: 36px;
+}
+.cta-desc {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+.cta-btn {
+    background-color: #3882F6;
+    color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    font-weight: 900;   
+    padding: 16px 32px;
+    height: 10%;
+    cursor: pointer
 }
